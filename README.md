@@ -1,2 +1,3 @@
-# GIS-for-Remote-Assessment-of-Residential-Properties
-Emory Capstone Project collaborate with Neighborhood Nexus
+# Remote Assessment of Residential Properties for Maintenance and Repair Needs Using Satellite Image Analysis
+
+
