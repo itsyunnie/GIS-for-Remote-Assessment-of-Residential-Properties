@@ -1,7 +1,9 @@
-# Affordable Housing Maintenance Detection Project
+# Remote Assessment of Residential Properties for Maintenance and Repair Needs Using Satellite Image Analysis: A Case Study in Fulton County, GA
 
-## Project Overview
-Affordable housing is a pressing issue in Georgia, with maintenance being a significant challenge for homeowners and communities. This project leverages overhead imagery to identify homes requiring maintenance, focusing on roof conditions, to aid in timely repairs and prevent minor issues from escalating into major problems. By automating the detection of housing requiring maintenance, this project aims to assist government-funded home-repair programs and reduce labor costs associated with traditional housing surveys.
+## Problem Statement and Objectives
+Affordable housing is a critical issue in Georgia, with maintenance being a significant challenge for homeowners and communities. Timely repairs and upkeep are vital to prevent minor issues from escalating into untenable living conditions and financial burdens. There are existing government-funded home-repair programs in Georgia such as zero-interest loans and homeowner services, but it has been a challenge for local government workers to identify individual broken or abandoned houses due to a lack of data. Traditionally, housing surveys are done by city officials physically driving around the streets and recording housing conditions; however, this method faced high labor costs considering the need to maintain updated information/data on the rapid changes in housing conditions. 
+
+This project proposes a novel approach to identifying homes that may require maintenance through the use of overhead imagery. By analyzing images of homes, particularly focusing on roof conditions, we aim to develop a predictive model that can serve as an early warning system for necessary repairs.
 
 ## Getting Started
 
@@ -22,16 +24,6 @@ Create a database containing the highest resolution images available for all tax
 Develop a predictive model to assess housing conditions, with a focus on roof analysis, using overhead imagery:
 - **RoofAnalysis.ipynb**: Includes two primary steps:
    1. **Roof Detection**: Identify the presence and location of roofs in images.
-   2. **Roof Condition Classification**: Assess and categorize the condition of detected roofs.
-
-## Contributing
-Contributions to this project are welcome. Please review the guidelines before making a contribution.
-
-## License
-This project is licensed under the MIT License. Please see the LICENSE file for more details.
-
-## Acknowledgments
-Special thanks to all contributors and supporters of the affordable housing initiative, including local government bodies and community organizations in Georgia.
-
+ 
 ## Contact
 For queries or collaboration inquiries, please open an issue in this repository or contact us directly at `contact@example.com`.
