@@ -23,7 +23,8 @@ Create a database containing the highest resolution images available for all tax
 ### 3. Housing Condition Assessment
 Develop a predictive model to assess housing conditions, with a focus on roof analysis, using overhead imagery:
 - **RoofAnalysis.ipynb**: Includes two primary steps:
-   1. **Roof Detection**: Identify the presence and location of roofs in images.
+   1. **Roof Detection**: Identify the presence and location of roofs in images by using Roboflow platform. You can call Roboflow API and use the model we trained.
+ 
  
 ## Contact
 For queries or collaboration inquiries, please open an issue in this repository or contact us directly at `contact@example.com`.
