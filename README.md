@@ -5,10 +5,26 @@ Affordable housing is a critical issue in Georgia, with maintenance being a sign
 
 This project proposes a novel approach to identifying homes that may require maintenance through the use of overhead imagery. By analyzing images of homes, particularly focusing on roof conditions, we aim to develop a predictive model that can serve as an early warning system for necessary repairs.
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 You should have access to Python and relevant libraries such as TensorFlow or PyTorch, OpenCV, NumPy, Pandas, and Matplotlib. Additionally, access to overhead imagery of Fulton County, GA, is required for analysis.
+
+## Data Descriptions
+
+### 1. Google Earth Engine (GEE)
+1. Multi-petabyte catalog of satellite imagery
+2. Free for academic and research use
+3. All of the image sources are legal through calling the GEE api
+
+### 2. Fulton County Tax Parcel Records
+1. 360,000 tax parcels within Fulton County
+2. 20+ features
+3. Features of interest: Parcel ID, LandAcres (Area), Address, Geometry
+
+### 3. National Agriculture Imagery Program Dataset (NAIP)
+1. Consists aerial imagery captured by the United States Department of Agriculture
+2. We use the images to capture the roof conditions of individual houses as a predictor of the property's physical conditions
+
+For the purpose of saving time and improving efficiency, we randomly select a sample dataset for testing the functions and models. You can direct use the sample dataset called **100sample2.csv**.
 
 ## Project Parts
 
@@ -17,14 +33,15 @@ This section involves preparing images of individual tax parcels for analysis:
 - **DataPreprocessing.ipynb**: A Jupyter notebook for initial data preparation and cleaning.
 - **FindSaveImages.ipynb**: A Jupyter notebook dedicated to extracting and saving high-resolution images for each tax parcel in Fulton County, GA.
 
-### 2. Database Creation
-Create a database containing the highest resolution images available for all tax parcels in Fulton County, GA, ensuring data is ready for analysis.
+### 2. Database Creation 
+(Future Direction) Create a database containing the highest resolution images available for all tax parcels in Fulton County, GA, ensuring data is ready for analysis.
 
 ### 3. Housing Condition Assessment
 Develop a predictive model to assess housing conditions, with a focus on roof analysis, using overhead imagery:
 - **RoofAnalysis.ipynb**: Includes two primary steps:
    1. **Roof Detection**: Identify the presence and location of roofs in images by using Roboflow platform. You can call Roboflow API and use the model we trained.
+   2. **Roof Segmentation**: (Future Direction) Convert the bounding boxes to segmentation masks. Then, remove background using segmentation masks.
  
  
 ## Contact
-For queries or collaboration inquiries, please open an issue in this repository or contact us directly at `contact@example.com`.
+For queries or collaboration inquiries, please open an issue in this repository.
