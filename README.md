@@ -39,7 +39,7 @@ This section involves preparing images of individual tax parcels for analysis:
 ### 3. Housing Condition Assessment
 Develop a predictive model to assess housing conditions, with a focus on roof analysis, using overhead imagery:
 - **RoofAnalysis.ipynb**: Includes two primary steps:
-   1. **Roof Detection**: Identify the presence and location of roofs in images by using Roboflow platform. You can call Roboflow API and use the model we trained.
+   1. **RoofDetection.ipynb**: Identify the presence and location of roofs in images by using Roboflow platform. You can call Roboflow API and use the model we trained.
    2. **Roof Segmentation**: (Future Direction) Convert the bounding boxes to segmentation masks. Then, remove background using segmentation masks.
  
  
